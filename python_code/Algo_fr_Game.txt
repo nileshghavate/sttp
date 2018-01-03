@@ -1,0 +1,28 @@
+Possible Clues:
+#     Close: You've guessed a correct number but in the wrong position
+#     Match: You've guessed a correct number in the correct position
+#     Nope: You haven't guess any of the numbers correctly
+
+
+
+Step 1: Generate 3 digit CODE (no repition)
+  use range(10)
+  convert the element of range to string and store as list
+  shuffle list
+  save only 3 digit of list as generated CODE
+
+Step 2: Get digits from user
+  store userGuess in a list
+  Compare userGuess and code
+  if matches, return "code cracked"
+  if not, generate clue_status.
+    enumerate through userGuess
+    check if the digit in userGuess matches with digit in CODE along with index location
+       add match in clue_status
+    else check if digit in userGuess matches with digit in CODE without index locaiton
+       add close in clue_status
+    else if nothing matches
+       add none in clue_status
+  print clue_status
+
+Step 3: Repeat step 2 till you crack the code
