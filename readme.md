@@ -16,5 +16,5 @@ This repo consist of following files and folder.
 python_code : This folder contains all the code executed in the session.
 
 
-For any queries, send e-mail.
+For any queries, send an e-mail.
 
